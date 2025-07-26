@@ -65,7 +65,7 @@ const Review = () => {
               style={{ backgroundColor: theme.palette.neutral.secondary }}
             >
               <Card className="w-full py-8 px-4 max-h-auto md:max-h-30 !font-secondary relative text-[14px] !rounded-none !overflow-visible !shadow-none ">
-                <CardActionArea className="!flex !flex-row !py-2 items-center justify-center gap-4 md:gap-14 !cursor-grab">
+                <CardActionArea className="!flex !flex-row !py-2 items-center justify-center gap-2 md:gap-14 !cursor-grab">
                   <CardMedia
                     component="img"
                     image={element.image}

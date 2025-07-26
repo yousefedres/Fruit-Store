@@ -56,7 +56,7 @@ const CardMenu = () => {
             slidesPerView: 3,
           },
         }}
-        modules={[Autoplay, EffectFade, Navigation]}
+        modules={[ EffectFade, Navigation]}
         className="my-8 mySwiper swiper-pagination"
       >
         {Data.map((element) => (
@@ -70,12 +70,12 @@ const CardMenu = () => {
               className="!w-full"
             >
               <Card className="flex justify-center items-center w-auto p-4 !min-h-50 !font-secondary text-[14px] !overflow-hidden !rounded-2xl !shadow-none">
-                <CardActionArea className="!flex !flex-row !min-h-full">
+                <CardActionArea className="!flex justify-center items-center !flex-row !min-h-full !w-[350px] !overflow-hidden">
                   <CardMedia
                     component="img"
                     loading="lazy"
                     image={element.image}
-                    className="!w-[150px] md:w-[200px] !h-[150px] !rounded-full drop-shadow-cardImg"
+                    className="!w-full md:!w-[200px] !h-[150px] !rounded-full drop-shadow-cardImg"
                   />
                   <CardContent>
                     <Typography

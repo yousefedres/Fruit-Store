@@ -162,7 +162,7 @@ const Shopping = () => {
                         onClick={() => {
                           deleteProductFromCart(product.id);
                         }}
-                        className="absolute top-[-123px] sm:top-[-44px] right-[-11px]  text-[26px] text-red-600 hover:text-red-400 !duration-300 cursor-pointer"
+                        className="absolute top-[-123px] sm:top-[-44px] right-[-11px]  text-[26px] text-red-500 hover:text-red-400 !duration-300 cursor-pointer"
                       >
                         <IoIosCloseCircle />
                       </button>

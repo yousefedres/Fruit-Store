@@ -125,7 +125,7 @@ function Header() {
             >
               <FaRegUserCircle className="cursor-pointer hover:!text-[#de2c4d] text-2xl" />
             </Button>
-            <DialogLogin open={open} handleClose={handleClose} />
+            {/* <DialogLogin open={open} handleClose={handleClose} /> */}
 
             {/*  */}
 

@@ -70,7 +70,7 @@ const CardMenu = () => {
               className="!w-full"
             >
               <Card className="flex justify-center items-center w-auto p-4 !min-h-50 !font-secondary text-[14px] !overflow-hidden !rounded-2xl !shadow-none">
-                <CardActionArea className="!flex justify-center items-center !flex-row !min-h-full !w-[350px] !overflow-hidden">
+                <CardActionArea className="!flex justify-center items-center !flex-row !min-h-full !w-[350px]">
                   <CardMedia
                     component="img"
                     loading="lazy"

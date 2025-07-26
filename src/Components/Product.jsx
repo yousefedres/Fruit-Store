@@ -73,7 +73,7 @@ const ProductInfo = () => {
     >
       <Box
         component="img"
-        className=" rounded-2xl !max-h-[425px]"
+        className=" rounded-2xl !min-h-[425px] !max-w-[425px]"
         sx={{ backgroundColor: theme.palette.neutral.secondary }}
         src={selectedProduct.image}
       />

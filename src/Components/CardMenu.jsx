@@ -75,7 +75,7 @@ const CardMenu = () => {
                     component="img"
                     loading="lazy"
                     image={element.image}
-                    className="!w-[200px] !max-w-full !h-[150px] !rounded-full drop-shadow-cardImg"
+                    className="!w-[180px] !max-w-full !h-[150px] !rounded-full drop-shadow-cardImg"
                   />
                   <CardContent>
                     <Typography

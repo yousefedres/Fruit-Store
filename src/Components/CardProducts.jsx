@@ -72,10 +72,10 @@ const CardProducts = ({ SearchValue }) => {
       className="my-5 !py-10 rounded-2xl "
       sx={{ backgroundColor: theme.palette.neutral.main }}
     >
-      <Container className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+      <Container className="grid grid-cols-1 gap-4 !overflow-hidden md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {filteredData.slice(0, visibleCount).map((element) => (
           <MotionBox
-            className="!min-h-[290px]"
+            className="!min-h-[290px] "
             variants={FadeLeft(element.id * 0.3)}
             initial="hidden"
             whileInView="visible"

@@ -173,14 +173,14 @@ const CardMenuLike = () => {
         ))}
       </Swiper>
       <button
-        className={`custom-prev absolute left-[-20px] top-1/2 z-1000 cursor-pointer rounded-full text-secondary/50 hover:bg-gray-400/10 p-3 text-2xl transition-opacity ${
+        className={`custom-prev absolute left-[0px] top-1/2 z-1000 cursor-pointer rounded-full text-secondary/50 hover:bg-gray-400/10 p-3 text-2xl transition-opacity ${
           isBeginning ? "opacity-30 pointer-events-none" : "opacity-100"
         }`}
       >
         <FaCaretLeft />
       </button>
       <button
-        className={`custom-next absolute right-[-20px] top-1/2 z-1000 cursor-pointer rounded-full text-secondary/50 hover:bg-gray-400/10 p-3 text-2xl transition-opacity ${
+        className={`custom-next absolute right-[0px] top-1/2 z-1000 cursor-pointer rounded-full text-secondary/50 hover:bg-gray-400/10 p-3 text-2xl transition-opacity ${
           isEnd ? "opacity-30 pointer-events-none" : "opacity-100"
         }`}
       >

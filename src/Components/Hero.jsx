@@ -16,7 +16,7 @@ const Hero = () => {
 
   //
   return (
-    <Container className="grid grid-cols-1 gap-6 md:grid-cols-2 min-h-[100vh] relative overflow-hidden">
+    <Container className="grid grid-cols-1 gap-0 md:gap-6 md:grid-cols-2 min-h-[100vh] relative overflow-hidden">
       {/* Brand Info */}
 
       <Box className="relative z-30 flex flex-col justify-center py-14 md:py-0 font-averia">

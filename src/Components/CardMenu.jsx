@@ -56,7 +56,7 @@ const CardMenu = () => {
             slidesPerView: 3,
           },
         }}
-        modules={[EffectFade, Navigation]}
+        modules={[Autoplay, EffectFade, Navigation]}
         className="my-8 mySwiper swiper-pagination"
       >
         {Data.map((element) => (

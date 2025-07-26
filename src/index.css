@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import "swiper/css";
+@import "swiper/css/pagination";
+
+@theme {
+  --color-primary: #de2c4d;
+  --color-secondary: #fb923c;
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Averia Serif Libre", serif;
+}
+
+.primary-btn {
+  @apply !bg-primary !text-white !text-[19px] !capitalize !font-semibold !py-1 !px-2 !mt-7 !rounded-xl shadow-[0px_10px_14px_-7px_#de0029] hover:scale-110 !duration-500;
+}
+.secondary-btn {
+  @apply !bg-primary !text-white !text-[15px] !capitalize !font-semibold !py-1 !px-2 !rounded-xl shadow-[0px_10px_14px_-7px_#de0029] hover:scale-90 duration-300;
+}
+.three-btn {
+  @apply !bg-primary !text-white !text-[15px] !capitalize !font-semibold !py-1 !px-2 !rounded-xl shadow-[0px_10px_14px_-7px_#de0029] hover:!bg-white hover:!text-primary hover:!shadow-none !border-[3px] !border-primary/70  !duration-700 !box-border;
+}
+
+@layer utilities {
+  .drop-shadow {
+    filter: drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.2));
+  }
+  .drop-shadow-cardImg {
+    filter: drop-shadow(14px 14px 22px rgba(0, 0, 0, 0.2));
+  }
+  .drop-shadow-menu {
+    filter: drop-shadow(0 0 200px rgba(0, 0, 0, 1));
+  }
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Averia Serif Libre", serif !important;
+  overflow-x: hidden;
+}
+
+@keyframes toLeft {
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* swiper bullet */
+
+.swiper-pagination-bullet {
+  @apply bg-gray-400/90 w-2 h-2 rounded-full mx-auto !my-0;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-secondary/70 w-2.5 h-2.5;
+}
+
+/* Hover Img */
+.hoverImg {
+  position: relative;
+}
+.hoverImg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffffbd;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 100000000;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.hoverImg:hover::before {
+  transform: scale(1);
+}
+/* Hover Img */

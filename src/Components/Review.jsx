@@ -64,16 +64,16 @@ const Review = () => {
               className="!rounded-2xl !overflow-hidden"
               style={{ backgroundColor: theme.palette.neutral.secondary }}
             >
-              <Card className="w-full py-8 px-4 max-h-30 !font-secondary relative text-[14px] !rounded-none !overflow-visible !shadow-none ">
+              <Card className="w-full py-8 px-4 max-h-auto md:max-h-30 !font-secondary relative text-[14px] !rounded-none !overflow-visible !shadow-none ">
                 <CardActionArea className="!flex !flex-row !py-2 items-center justify-center gap-4 md:gap-14 !cursor-grab">
                   <CardMedia
                     component="img"
                     image={element.image}
                     className="!w-[80px] !h-[80px] rounded-[50%]  drop-shadow-cardImg"
                   />
-                  <CardContent>
+                  <CardContent className="flex flex-col items-center justify-center">
                     <Typography
-                      className="!font-semibold !text-[13px]  mb-3.5"
+                      className="!font-semibold !text-[13px]  mb-3.5 text-center"
                       gutterBottom
                       variant="h6"
                       component="div"

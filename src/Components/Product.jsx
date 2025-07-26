@@ -68,12 +68,12 @@ const ProductInfo = () => {
 
   return (
     <Container
-      className="grid grid-cols-1 md:grid-cols-2 !my-10 gap-6 !px-8 rounded-2xl py-12"
+      className="grid grid-cols-1 md:grid-cols-2 !my-10 !gap-7 !px-8 rounded-2xl py-12 "
       sx={{ backgroundColor: theme.palette.neutral.main }}
     >
       <Box
         component="img"
-        className=" rounded-2xl min-h-auto md:!min-h-[425px] !max-w-full md:!max-w-[425px]"
+        className=" rounded-2xl min-h-auto md:!min-h-[425px] !max-w-full"
         sx={{ backgroundColor: theme.palette.neutral.secondary }}
         src={selectedProduct.image}
       />

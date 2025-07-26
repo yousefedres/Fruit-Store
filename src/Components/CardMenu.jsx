@@ -70,12 +70,12 @@ const CardMenu = () => {
               className="!w-full"
             >
               <Card className="flex justify-center items-center w-auto p-4 !min-h-50 !font-secondary text-[14px] !overflow-visible !rounded-2xl !shadow-none">
-                <CardActionArea className="!flex !flex-row !min-h-full !overflow-hidden">
+                <CardActionArea className="!flex !flex-row !min-h-full">
                   <CardMedia
                     component="img"
                     loading="lazy"
                     image={element.image}
-                    className="!w-[200px] !h-[150px] !rounded-full drop-shadow-cardImg"
+                    className="!w-[200px] !max-w-full !h-[150px] !rounded-full drop-shadow-cardImg"
                   />
                   <CardContent>
                     <Typography

@@ -69,7 +69,7 @@ const CardMenu = () => {
               to={`/product/${element.id}/${element.title}`}
               className="!w-full"
             >
-              <Card className="flex justify-center items-center w-auto p-4 !min-h-50 !font-secondary text-[14px] !overflow-hidden !rounded-2xl !shadow-none">
+              <Card className="flex justify-center items-center w-auto p-4 !min-h-50 !font-secondary text-[14px] !overflow-hidden gap-5 !rounded-2xl !shadow-none">
                 <CardActionArea className="!flex !flex-row !min-h-full">
                   <CardMedia
                     component="img"
